@@ -6,7 +6,7 @@ function ProtectedPage() {
   useEffect(() => {
     const request = async () => {
       try {
-        const response = await listPets();
+        await listPets();
       } catch (error) {}
     };
     request();
