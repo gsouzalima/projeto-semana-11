@@ -6,11 +6,8 @@ function ProtectedPage() {
   useEffect(() => {
     const request = async () => {
       try {
-        const response = await listPets();
-        console.log(response.data);
-      } catch (error) {
-        console.log("Deu Ruim");
-      }
+        await listPets();
+      } catch (error) {}
     };
     request();
   }, []);

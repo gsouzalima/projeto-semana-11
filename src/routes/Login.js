@@ -6,7 +6,6 @@ function Login() {
   const auth = useAuth();
   const location = useLocation();
   const navigate = useNavigate();
-  console.log(location);
   const from = location.state?.from?.pathname || "/";
 
   const handleSubmit = (event) => {
@@ -21,7 +20,6 @@ function Login() {
     auth.login(data, () => {
       navigate(from);
     });
-    console.log(data);
   };
 
   return (
