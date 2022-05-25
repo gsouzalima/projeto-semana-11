@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 const AuthStatus = () => {
   const auth = useAuth();
   const navigate = useNavigate();
-  console.log(auth);
 
   if (!auth.user) {
     return <p>Você não está logado. Perdeu parça</p>;

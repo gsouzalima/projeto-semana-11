@@ -7,10 +7,7 @@ function ProtectedPage() {
     const request = async () => {
       try {
         const response = await listPets();
-        console.log(response.data);
-      } catch (error) {
-        console.log("Deu Ruim");
-      }
+      } catch (error) {}
     };
     request();
   }, []);
