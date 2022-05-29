@@ -1,0 +1,1 @@
+export const apiCode = process.env.REACT_APP_API_CODE
